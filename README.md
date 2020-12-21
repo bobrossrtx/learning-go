@@ -41,7 +41,7 @@ EXAMPLE: go doc time. Now
 
 ### Comments:
 
-You can create comments with //, or you can make a multi line comment with /* Comment goes here */.
+You can create comments with `//`, or you can make a multi line comment with `/* Comment goes here */`.
 
 
 
