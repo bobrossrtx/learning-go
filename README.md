@@ -8,4 +8,4 @@
 
 Since I have intermit knowledge of basic HTML and CSS I decided to learn Go to develop backend server side code and data for future sites I end up building.
 
-Yes, I know that learning a more upfront and modernly used language like `JavaScript` would benefit me more since there are alot more libraries and frameworks especially when it comes to node but I thought of ths as a better starting point instead of Hitting the harder stuff up first like i have been for the past 2 months
+Yes, I know that learning a more upfront and modernly used language like `JavaScript` would benefit me more since there are alot more libraries and frameworks especially when it comes to node but I thought of this as a better starting point instead of Hitting the harder stuff up first like i have been for the past 2 months
