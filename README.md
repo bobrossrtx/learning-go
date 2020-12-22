@@ -41,7 +41,7 @@ EXAMPLE: go doc time. Now
 
 ### Comments:
 
-You can create comments with `//`, or you can make a multi line comment with `/* Comment goes here */`.
+You can create comments with ```//```, or you can make a multi line comment with ```/* Comment goes here */```.
 
 
 
@@ -50,18 +50,20 @@ You can create comments with `//`, or you can make a multi line comment with `/*
 You can create a variable by defining one with var.
 You can use that variable in your code as a nickname for your values.
 EXAMPLE :
+```go
 var funfair = "Hummingbirds' wings can beat up to 200 times a second."
 fmt.Println("Did you know?")
 fmt.Println(funfair)
 Output :
 Did you know?
 Hummingbirds' wings can beat up to 200 times a second.
+```
 
-You can also make a constant. (const)
+You can also make a constant. `(const)`
 They Can be used to create a variable that can not be changed later on in the code. 
 
-Variables can be assigned different types : bool, string, int32 int64, uint32 uint64, byte // alias for uint8, rune // alias for int32, float32 float64, complex64 complex128.
-The basic types in Go : ints, floats, complexs, and strings.
+Variables can be assigned different types : `bool, string, int32 int64, uint32 uint64, byte // alias for uint8, rune // alias for int32, float32 float64, complex64 complex128`.
+The basic types in Go : `ints, floats, complexs, and strings`.
 := is known as the short declaration operator. It is used to declare and initialize 
 the variables inside and outside the functions.
 
@@ -94,11 +96,13 @@ Here are the basic operators:
 >
 > != Not equal to
 >
-> 
-> <; Greater than
+>  < Greater than
 >
-> 
-> <;= Greater than or equal to
+> <= Greater than or equal to
+>
+> &gt; Less Than
+>
+> &gt;= Less than or equal to
 
 Logical operators:
 > && And
@@ -110,3 +114,54 @@ Logical operators:
 
 Go also has a math/rand library that can be used to create a random number.
 This is likely to be used since if you hard caode variables, you know the outcome therefor no need for a if statement.
+
+This is likely to be used since if you hard code variables, you know the outcome therefor no need for a if statement.
+
+### Functions:
+	
+	It’s important to note that the code inside the function body does not run until we call the function.
+	We can call a function by using it's name followed by a parentheses somewhere outside the definition of the function.
+	EG: After the function is created, type the functions name with a paren inside of the main function (func main())
+	
+### Scopes:
+A function definition creates something called a scope. We’ve referenced scope before in our conditionals exercise about
+scoped short declarations but it’s important to recognize how scope plays a huge role in functions and programming overall!
+	
+Scope is a concept that refers to where the values and functions are defined and where they can be accessed.
+For instance, when a variable is defined within a function, that variable is only accessible within that function.
+When we try to access that same variable from a different function, we get an error because we can’t do it.
+Each function has its own specific scope.
+	
+There are three different scopes present in this example:
+The global scope, which contains the function definitions for main() and performAddition().
+performAddition() has a local scope, which defines x and y.
+main() has a local scope also. It can access performAddition() because that’s defined on the same scope level as main() but can’t access the internals of performAddition‘s scope (i.e., x or y).
+	
+This differentiation of scope keeps the namespace, the available variables and keywords, cleaner as a result. You can only refer to variables or functions defined within a specific namespace.
+	
+### Returning Values from Functions:
+	
+While variables and their values are scoped to their functions, there are no built-in ways of passing information out of their native functions and into another namespace.
+The way that information can be sent from within a function to the call site, the place where the function is called. 
+This is done by returning a value — when we return a value, we pass the value to another place in our code.
+A function can be given a return type, the type of a value that will be returned by the function.
+At the call site, the return value can be stored within a variable of the same type as the function’s return.
+A return statement tells the function to pass back a value (or multiple values) and stops the function from executing any more code, i.e. if we put more code after our return statement, it would not run!
+we can access the variables we need through the return keyword!
+eg.
+	
+``` go
+func getLengthOfCentralPark() int32 {
+    var lengthInBlocks int32
+    lengthInBlocks = 51
+    return lengthInBlocks
+}
+	
+func main() {
+	var centralParkLength int32
+	centralParkLength = getLengthOfCentralPark()
+	fmt.Println(centralParkLength) // Prints: 51
+}
+```
+	
+}
