@@ -119,9 +119,9 @@ This is likely to be used since if you hard code variables, you know the outcome
 
 ### Functions:
 	
-	It’s important to note that the code inside the function body does not run until we call the function.
-	We can call a function by using it's name followed by a parentheses somewhere outside the definition of the function.
-	EG: After the function is created, type the functions name with a paren inside of the main function (func main())
+It’s important to note that the code inside the function body does not run until we call the function.
+We can call a function by using it's name followed by a parentheses somewhere outside the definition of the function.
+EG: After the function is created, type the functions name with a paren inside of the main function (func main())
 	
 ### Scopes:
 A function definition creates something called a scope. We’ve referenced scope before in our conditionals exercise about
