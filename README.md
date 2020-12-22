@@ -163,5 +163,3 @@ func main() {
 	fmt.Println(centralParkLength) // Prints: 51
 }
 ```
-	
-}
