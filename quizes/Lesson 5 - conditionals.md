@@ -121,6 +121,7 @@ if !weekend {
 ```
 > Take the day off!
 
+___
 
 # Results
 
